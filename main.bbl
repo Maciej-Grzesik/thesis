@@ -1,23 +1,17 @@
 \begin{thebibliography}{1}
 
-\bibitem{bookOetiker2022}
-T.~Oetiker, H.~Partl, I.~Hyna, and E.~Schlegl.
-\newblock Nie za krótkie wprowadzenie do systemu {\LaTeXe{}}, 2022.
-\newblock \url{https://polish-mirror.evolution-host.com/ctan/info/lshort/polish/lshort-pl.pdf}.
+\bibitem{malczewska2011}
+P.~Malczewska.
+\newblock Izolacja społeczna osób z uszkodzonym słuchem jako wspólny obszar badań pedagogiki i antropologii.
+\newblock {\em Pedagogika a etnologia i antropologia kulturowa. Wspólne obszary badań}, 10(2):128, 2011.
 
-\bibitem{miscSieluzycki2024}
-Cezary Sielużycki.
-\newblock Krótko o~pisaniu, czyli kilka wskazówek dla studentów {PWr}.
-\newblock \url{https://ibp.pwr.edu.pl/cs/Krotko-o-pisaniu.pdf}, 2024.
+\bibitem{mamczur2020}
+M.~Mamczur.
+\newblock Czym jest i jak działa transformer sieć neuronowa?, March 2020.
+\newblock Dostęp: 23 maj 2024.
 
-\bibitem{bookSurname2020}
-A.~B. Surname and C.~D. {Last Name}.
-\newblock {\em Book Title}.
-\newblock Famous University Press, Cambridge, UK, 2020.
-
-\bibitem{artSurname2022}
-E.~Surname and F.~G. Surname.
-\newblock Article title.
-\newblock {\em Journal Name}, 10(2):12--34, 2022.
+\bibitem{vaswani2023attentionneed}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need, 2023.
 
 \end{thebibliography}

@@ -1,6 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1728371198.63906 "/Users/maciej/Desktop/thesis/main.tex" "main.pdf" "main" 1728371200.02497 0
-  "/Users/maciej/Desktop/thesis/main.tex" 1728371198.37668 16854 5634f925e551fd904102800db563936b ""
+["bibtex main"] 1728475375.48332 "main.aux" "main.bbl" "main" 1728475377.00765 0
+  "./refs.bib" 1728475144.53288 1943 08f0ccd9ed0b6f01e4f76b01b0a7942b ""
+  "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1728475376.61788 1696 d4594485bdb2f60be0a837da5544fcad "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1728475375.64447 "/Users/maciej/Desktop/thesis/main.tex" "main.pdf" "main" 1728475377.00784 0
+  "/Users/maciej/Desktop/thesis/main.tex" 1728475373.83584 19867 f01526484d55db4edb3ab237af82b7f1 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1136849721 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/pl/plrm.enc" 1136849721 1944 1845592c00bbe510359fd6887a83ff72 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/pl/plsc.enc" 1136849721 1970 17f08459267325f59652d212eb7ed719 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -38,9 +47,11 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/pl/plsy6.tfm" 1136768653 1300 730d55d47130c8c9a62c9e7eab4ae96a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/pl/plsy7.tfm" 1136768653 1304 a6a2c86c403d8bc56664eeac17804b8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/pl/plsy8.tfm" 1136768653 1304 3b6e6a90176144a582c7bcae45156f9b ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/pl/plti12.tfm" 1136768653 2248 f77d595f67089cf2926494dc25800828 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/pl/plbx12.pfb" 1136849748 26733 3fa55bab1df289b642fa8cd9e61fb25f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/pl/plcsc10.pfb" 1136849748 26854 260e35f0156087ec159362abd8f70655 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/pl/plr12.pfb" 1136849748 27754 6f5ae55af1b64df2aab0bbeada447136 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/pl/plti12.pfb" 1136849748 31333 b77f84fb77cd444a4b883716d8141250 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -132,13 +143,16 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728337886 8221418 abd89e605110aa43f670ce12640ad07b ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "figs/PWrLogo.eps" 1711048364 10475 32c1d38673a67a72420c2fa41610a9da ""
-  "main.aux" 1728371199.93869 761 e9a953e0693030fdc0621fb177a00d40 "pdflatex"
-  "main.out" 1728371199.93941 353 70afcc94856360abdf162f566c16fa1b "pdflatex"
-  "main.tex" 1728371198.37668 16854 5634f925e551fd904102800db563936b ""
-  "main.toc" 1728371199.93973 215 40d86d0b3904b3b34c1d3623dcc9565c "pdflatex"
-  "pre.sty" 1711048364 2141 0a2f46be4ea7d68f3e5927c2fa3698f3 ""
+  "main.aux" 1728475376.61788 1696 d4594485bdb2f60be0a837da5544fcad "pdflatex"
+  "main.bbl" 1728475375.64097 660 b5d0d16dbef0333debf92c9d48b057ef "bibtex main"
+  "main.brf" 1728475376.61886 153 9408f78380c4eb7c0661c40f1452e8c2 "pdflatex"
+  "main.out" 1728475376.61868 887 08e52dce1e550c98fa00b5ca295b5c48 "pdflatex"
+  "main.tex" 1728475373.83584 19867 f01526484d55db4edb3ab237af82b7f1 ""
+  "main.toc" 1728475376.61913 501 39bd40e97748e0f925b145db1a3e45c2 "pdflatex"
+  "pre.sty" 1728474458.72397 2141 0a2f46be4ea7d68f3e5927c2fa3698f3 ""
   (generated)
   "main.aux"
+  "main.brf"
   "main.log"
   "main.out"
   "main.pdf"

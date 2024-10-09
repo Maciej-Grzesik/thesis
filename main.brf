@@ -1,7 +1,3 @@
-\backcite {bookOetiker2022}{{7}{2.1}{section.2.1}}
-\backcite {bookSurname2020}{{7}{2.2}{equation.2.2.1}}
-\backcite {artSurname2022}{{7}{2.2}{equation.2.2.1}}
-\backcite {bookOetiker2022}{{8}{2.3.2}{subsection.2.3.2}}
-\backcite {miscSieluzycki2024}{{10}{2.6}{section.2.6}}
-\backcite {miscSieluzycki2024}{{11}{2.6}{section.2.6}}
-\backcite {miscSieluzycki2024}{{12}{2.1}{table.caption.4}}
+\backcite {malczewska2011}{{2}{1.3}{section.1.3}}
+\backcite {vaswani2023attentionneed}{{3}{2}{chapter.2}}
+\backcite {mamczur2020}{{3}{2.1}{section.2.1}}

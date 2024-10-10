@@ -5,13 +5,13 @@ P.~Malczewska.
 \newblock Izolacja społeczna osób z uszkodzonym słuchem jako wspólny obszar badań pedagogiki i antropologii.
 \newblock {\em Pedagogika a etnologia i antropologia kulturowa. Wspólne obszary badań}, page 128, 2011.
 
+\bibitem{vaswani2023attentionneed}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need, 2023.
+
 \bibitem{mamczur2020}
 M.~Mamczur.
 \newblock Czym jest i jak działa transformer sieć neuronowa?, March 2020.
 \newblock Dostęp: 23 maj 2024.
-
-\bibitem{vaswani2023attentionneed}
-Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
-\newblock Attention is all you need, 2023.
 
 \end{thebibliography}

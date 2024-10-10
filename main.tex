@@ -88,7 +88,7 @@ Rozwiązania inżynieryjne wykorzystane w transformerach pozwalają modelom na p
 	\label{fig:transformer_schema}
 \end{figure}
 
-W praktyce oznacza to,  Uczenie transformerów przebiega w określonej stałej ilości $O(1)$ sekwencyjnie wykonywanych operacji, modele RNN wymagają natomiast $O(n)$ sekwencyjnie wykonywanych operacji co sprawia, że są mniej wydajne przy dłuższych sekwencjach.
+W praktyce oznacza to, że uczenie transformerów przebiega w określonej stałej ilości $O(1)$ sekwencyjnie wykonywanych operacji, modele RNN wymagają natomiast $O(n)$ sekwencyjnie wykonywanych operacji co sprawia, że są mniej wydajne przy dłuższych sekwencjach.
 
 \pagebreak
 
@@ -109,7 +109,7 @@ Tak przygotowane dane zostają przekazane do dekodera, którego zadaniem jest pr
     \item Embedding proces ten przebiega dokładnie tak samo jak w przypadku warstwy kodującej. Dane zamieniane są na wartości numeryczne w postaci macierzy.
     \item Positional Encoding również odbywa się w taki sam sposób jak w przypadku warstwy kodującej. Obliczane są wektory nadające kontekst informacjom.
     \item Masked Multi-Head Attention polega na zamaskowaniu, czyli przemnożeniu przez macierz zer.
-    \item Multi-Head Attention with encoder łączy wektor wyjściowy z warstwy enkodującejz wektorem z poprzedniego kroku ze sobą. Podczas tego etapu sprawdzane jestw jakim stopniu każdy wektor jest ze sobą powiązany.
+    \item Multi-Head Attention with encoder łączy wektor wyjściowy z warstwy enkodującej z wektorem z poprzedniego kroku ze sobą. Podczas tego etapu sprawdzane jest w jakim stopniu każdy wektor jest ze sobą powiązany.
     \item Feed Forward jest to sieć, której zadaniem jest uproszczenie tłumaczenia wektora, aby łatwiej można było przerobić transformerowi wyniki parowań. Następnie w etapie linear layer przekształcane są wyniki mające na ten sam wymiar co dane wejściowe. Następnie przy użyciu funkcji softmax zmieniane są wyniki prawdopodobieństwa.
 \end{itemize}
 

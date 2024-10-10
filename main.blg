@@ -4,41 +4,41 @@ The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: refs.bib
 Warning--entry type for "mamczur2020" isn't style-file defined
---line 50 of file refs.bib
+--line 48 of file refs.bib
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            514 strings with 4531 characters,
-and the built_in function-call counts, 895 in all, are:
-= -- 75
+            513 strings with 4529 characters,
+and the built_in function-call counts, 936 in all, are:
+= -- 81
 > -- 57
-< -- 0
+< -- 1
 + -- 23
 - -- 20
-* -- 62
-:= -- 161
+* -- 56
+:= -- 162
 add.period$ -- 8
 call.type$ -- 3
 change.case$ -- 19
 chr.to.int$ -- 0
 cite$ -- 3
-duplicate$ -- 25
+duplicate$ -- 32
 empty$ -- 68
 format.name$ -- 20
-if$ -- 177
+if$ -- 193
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 1
 newline$ -- 17
 num.names$ -- 6
-pop$ -- 27
+pop$ -- 30
 preamble$ -- 1
 purify$ -- 16
 quote$ -- 0
-skip$ -- 22
+skip$ -- 30
 stack$ -- 0
-substring$ -- 24
-swap$ -- 3
-text.length$ -- 0
+substring$ -- 21
+swap$ -- 10
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 12

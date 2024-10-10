@@ -67,8 +67,60 @@ Transformery to zaawansowane modele uczenia maszynowego, szeroko stosowane w prz
 W odróżnieniu od poprzednio stosowanych modeli uczenia maszynowego opierających się na podejściu rekurencyjnym i mechanizmie uwagi, naukowcy pracujący dla firmy Google zaproponowali rozwiązanie wykorzystujące jedynie mechanizm uwagi. Skutkiem tego podejścia jest znaczne przyspieszenie czasu uczenia modelu przy zachowaniu wysokiej precyzji \cite{vaswani2023attentionneed}.
 \section{Zasada działania}
 Działanie transformera opiera się na warstwie kodującej oraz na warstwie dekodującej.
-Zadaniem warstwy kodującej jest zakodowanie argumentów wejściowych (np. tekstu, obrazów) do postaci numerycznej. Warstwa dekodująca, wykorzystuje przekazane z warstwykodującej zakodowane informacje do przetworzenia ich na wartości wyjściowe (np. do tekstu czy wideo). \\
-Istotnym elementem, który różnicuje transformery od rekurencyjnych modeli uczenia maszynowego jest mechanizm uwagi. W tradycyjnych modelach rekurencyjnych sieci neuronowych (RNN) dane przetwarzane są sekwencyjnie tzn., że są analizowane krok po kroku (patrz Rysunek 1) \cite{mamczur2020} co skutkuje ograniczeniami m.in. w równoległości przetwarzaniu danych. Uczenie transformerów przebiega w określonej stałej ilości równolegle wykonywanych operacji, modele RNN wymagają natomiast sekwencyjnie wykonywanych operacji, co sprawia, że są mniej wydajne przy dłuższych sekwencjach.
+Zadaniem warstwy kodującej jest zakodowanie argumentów wejściowych (np. tekstu, obrazów) do postaci numerycznej. Warstwa dekodująca, wykorzystuje przekazane z warstwy kodującej zakodowane informacje do przetworzenia ich na wartości wyjściowe (np. do tekstu czy wideo). \\
+Istotnym elementem, który różnicuje transformery od rekurencyjnych modeli uczenia maszynowego jest mechanizm uwagi. W tradycyjnych modelach rekurencyjnych sieci neuronowych (RNN) dane przetwarzane są sekwencyjnie tzn., że są analizowane krok po kroku (patrz \ref{fig:rnn_schema}) \cite{mamczur2020} co skutkuje ograniczeniami m.in. w równoległości przetwarzaniu danych.
+
+\begin{figure}[h]
+    \centering
+	\includegraphics[scale=0.75]{figs/rnn.png}
+	\caption{Przepływ informacji wejściowych w rekurencyjnych sieciach neuronowych}
+	\label{fig:rnn_schema}
+\end{figure}
+
+\pagebreak
+
+Rozwiązania inżynieryjne wykorzystane w transformerach pozwalają modelom na przetwarzanie wszystkich elementów sekwencji jednocześnie (patrz \ref{fig:transformer_schema}).
+
+\begin{figure}[h]
+    \centering
+	\includegraphics[scale=0.75]{figs/transformer.png}
+	\caption{Przepływ informacji wejściowych w transformerach}
+	\label{fig:transformer_schema}
+\end{figure}
+
+W praktyce oznacza to,  Uczenie transformerów przebiega w określonej stałej ilości $O(1)$ sekwencyjnie wykonywanych operacji, modele RNN wymagają natomiast $O(n)$ sekwencyjnie wykonywanych operacji co sprawia, że są mniej wydajne przy dłuższych sekwencjach.
+
+\pagebreak
+
+\section{Architektura}
+
+Zanim dane przetwarzane przez transformer zostaną przekazane do kodera muszą zostać wstępnie przetworzone. Proces ten można podzielić na dwa kroki:
+\begin{itemize}
+    \item Input Embedding polega na zamienieniu danych wejściowych na przystępne dla obliczeń komputerowych wektory.
+    \item Positional Encoding składa się z wektorów, których zadaniem jest nadanie kontekstu na podstawie pozycji danych w sekwencji. Jest to istotne, gdyż z punktu widzenia maszyny nie jest wstanie odróżnić ona informacji użytych w różnym znaczeniu. 
+\end{itemize}
+Sam koder składa się z dwóch elementów:
+\begin{itemize}
+    \item Multi-Head Attention polega na obliczeniu wektora uwagi dla poszczególnych informacji przekazanych do tej warstwy. W tym etapie obliczany jest tzw. wektor uwagi za pomocą którego określa się wagę poszczególnych informacji. W przypadku przetwarzania wideo identyfikowane są kluczowe momenty takie jak m.in. gesty poprzez nadanie wag poszczególnym klatkom wideo w zależności od ich znaczenia. Ignorowane są mniej istotne informacje lub szum.
+    \item Feed Forward, w tym etapie obliczone wektory przekazywane są do sieci MLP (Multi Layer Perceptron), która używana jest dla każdego wektora uwagi.
+\end{itemize}
+Tak przygotowane dane zostają przekazane do dekodera, którego zadaniem jest przewidywanie kolejnych słów czy obrazów. W tym procesie udział biorą poszczególne bloki:
+\begin{itemize}
+    \item Embedding proces ten przebiega dokładnie tak samo jak w przypadku warstwy kodującej. Dane zamieniane są na wartości numeryczne w postaci macierzy.
+    \item Positional Encoding również odbywa się w taki sam sposób jak w przypadku warstwy kodującej. Obliczane są wektory nadające kontekst informacjom.
+    \item Masked Multi-Head Attention polega na zamaskowaniu, czyli przemnożeniu przez macierz zer.
+    \item Multi-Head Attention with encoder łączy wektor wyjściowy z warstwy enkodującejz wektorem z poprzedniego kroku ze sobą. Podczas tego etapu sprawdzane jestw jakim stopniu każdy wektor jest ze sobą powiązany.
+    \item Feed Forward jest to sieć, której zadaniem jest uproszczenie tłumaczenia wektora, aby łatwiej można było przerobić transformerowi wyniki parowań. Następnie w etapie linear layer przekształcane są wyniki mające na ten sam wymiar co dane wejściowe. Następnie przy użyciu funkcji softmax zmieniane są wyniki prawdopodobieństwa.
+\end{itemize}
+
+Poszczególne bloki architektury wraz z przepływem informacji w modelu zostały zaprezentowane na schemacie \ref{fig:transformer_architecture}.
+
+\begin{figure}[h]
+    \centering
+	\includegraphics[scale=0.20]{figs/architecture.png}
+	\caption{Schemat blokowy architektury transformera}
+	\label{fig:transformer_architecture}
+\end{figure}
 
 \bibliographystyle{plain}
 \bibliography{refs}

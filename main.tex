@@ -1,5 +1,5 @@
-\documentclass[12pt,a4paper,oneside]{book}
-% \documentclass[12pt,a4paper,twoside]{book} // zamienilem z twoside na oneside zeby na kazdej stronie bylo
+% \documentclass[12pt,a4paper,oneside]{book}
+\documentclass[12pt,a4paper,twoside]{book} % zamienilem z twoside na oneside zeby na kazdej stronie bylo
 
 \usepackage{pre}
 
@@ -19,7 +19,7 @@
 \author
     {
     \vspace{1cm}
-    Autor: Maciej Grzesik\\
+    Autor: Maciej Grzesik asda asds\\
     Opiekun: Prof. uczelni dr hab. Sebastian Kraszewski 
     }
 \date{\vfill Wrocław~2024}
@@ -29,6 +29,18 @@
 \begin{document}
 
 \maketitle
+
+\afterpage{\blankpage}\clearpage
+
+\begin{flushright}
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    {
+        \em Moim \dots
+    }
+\end{flushright}
+
+\afterpage{\blankpage}\clearpage
 
 {
   \hypersetup{linkcolor=black}
@@ -46,20 +58,34 @@
 
 \chapter{Wprowadzenie}\label{ch:intro}
 
-\section{Słowa kluczowe}\label{sec:keywords}
-Rozpoznawanie języka migowego, aplikacja mobilna, flutter, uczenie głębokie, transformer, wizja komputerowa
-
-\section{Cel pracy}\label{sec:aimNscope}
-% \section{Cel i~zakres}\label{sec:aimNscope}
-
-Celem pracy jest stworzenie korssplatformowej aplikacji mobilnej w środowisku Flutter opartym o język programowania Dart, która wykorzystuje architekturę transformerów do rozpoznawania i tłumaczenia języka migowego na tekst w czasie rzeczywistym. 
+\section{Motywacja}
 
 
-\section{Związek z~iżnynierią biomedyczną}
-Osoby z upośledzeniem słuchu zmagają się z wykluczeniem społecznym, ze względu~na brak możliwości komunikacji za pomocą konwencjonalnej mowy.  
+Wykluczenie społeczne osób z niepełnosprawnościami stanowi poważny problem w społeczeństwie.
+Osoby z uszkodzeniem słuchu, szczególnie w życiu codziennym, doświadczają trudności w komunikacji z otoczeniem, które opiera się na konwencjonalnej mowie.
+Język migowy, będący podstawową formą komunikacji dla osób głuchoniemych, nadal jest słabo znany i nauczany wsród osób zdrowych, co pogłębia te trudności.
 Na podstawie badań Pauliny Malczewskiej wynika, że aż 90\% ankietowanych osób głuchych doświadcza alienacji oraz dyskryminacji ze strony osób słyszących \cite{malczewska2011}. \\
-Bariery komunikacyjne między osobami głuchoniemiymi a tymi, którzy nie znają języka migowego, stanowią znaczący problem społeczny i medyczny. Przyczynia się to do izolacji społecznej, trudności w dostępie do usług zdrowotnych i ogólnie niszej jakości życia. \\
-Stworzenie aplikacji wspierającej osoby głuche nie tylko ułatwi komunikację, ale także przyczyni się do zwiększenia inkluzywności społecznej, zapewniając równe szanse i redukując poziom dyskryminacji.
+Bariery komunikacyjne między osobami głuchoniemymi a tymi, którzy nie znają języka migowego, stanowią znaczący problem społeczny i medyczny. Przyczynia się to do izolacji społecznej, trudności w dostępie do usług zdrowotnych i ogólnie niszej jakości życia. \\
+Istotnym jest zaadresowanie tego problemu za pomocą aplikacji wspierającej osoby głuchonieme, nie tylko ułatwi to komunikację, ale także przyczyni się do zwiększenia inkluzywności społecznej, zapewniając równe szanse i redukując poziom dyskryminacji.
+
+
+\section{Cel}\label{sec:aim}
+
+Celem pracy jest stworzenie aplikacji mobilnej, która umożliwia tłumaczenie języka migowego na tekst w czasie rzeczywistym.
+Funkcjonalność aplikacji oparta jest na transformerach, czyli architekturze głębokiego uczenia maszynowego.
+Dzięki zastosowaniu modeli uczenia maszynowego możliwe będzie klasyfikowanie, a tym samym tłumaczenie języka migowego co ułatwi komunikację osobom głuchym.
+Aplikacja zbudowana jest w oparciu o środowisko Flutter, co pozwala na jej funkcjonowanie na różnych platformach mobilnych (Android i iOS).
+
+\section{Zakres}\label{sec:scope}
+
+W ramach pracy inżynierskiej zaprojektowany zostanie przyjazny interfejs użytkownika, który umożliwi proste korzystanie z aplikacji zarówno przez osoby głuche, jak i słyszące.
+Wykorzystanie środowiska Flutter pozwoli na implementacje interaktywnego interfejsu użytkownika przy wykorzystaniu wbudowanych funkcjonalności.
+Dodatkowo zostanie wyeliminowana potrzeba pisania kodu w natywnym dla danego środowiska języku, co zapewnia aplikacji możliwość działania na różnych mobilnych systemach operacyjnych.
+
+Zostanie również przeprowadzona implementacja oraz trening modelu.
+W tym etapie projektu zostaną zastosowane odpowiednie algorytmy, które umożliwią skuteczne uczenie modelu na podstawie zebranych danych dotyczących gestów języka migowego.
+Proces uczenia będzie obejmował zarówno fazę wstępną, w której model będzie dostosowywany do charakterystyki danych, jak i fazę walidacji, w której oceni się jego dokładność i zdolność do generalizacji gestów języka migowego.
+Istotynm jest również przeprowadzenie testów funkcjonalności modelu w warunkach rzeczywistych aby potwierdzić jego poprawne działanie lub wprowadzanie ewentualnych poprawek.  
 
 \chapter{Teoria}
 

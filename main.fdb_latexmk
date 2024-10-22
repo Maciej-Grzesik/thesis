@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1728558824.33445 "main.aux" "main.bbl" "main" 1728558826.6649 0
+["bibtex main"] 1728558824.33445 "main.aux" "main.bbl" "main" 1728579698.77511 0
   "./refs.bib" 1728479676.7951 1904 99ff3742b342d50a615e23e983ffd8f5 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1728558826.26672 2869 8f06c58e42c7191e40d2102393eb6ea7 "pdflatex"
+  "main.aux" 1728579698.34699 2869 8f06c58e42c7191e40d2102393eb6ea7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1728558824.50153 "/Users/maciej/Desktop/thesis/main.tex" "main.pdf" "main" 1728558826.66512 0
-  "/Users/maciej/Desktop/thesis/main.tex" 1728558822.39109 23376 f68e108839779ff289b55a13a51612ba ""
+["pdflatex"] 1728579696.98279 "/Users/maciej/Desktop/thesis/main.tex" "main.pdf" "main" 1728579698.7753 0
+  "/Users/maciej/Desktop/thesis/main.tex" 1728579696.4 23376 cdcd42ec8ce28e35c525cd990d177ae4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/pl/plit.enc" 1136849721 1946 62ba825cda1ff16dbaa60d53ac60525a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1136849721 2005 f094775651a1386335c158fb632529f1 ""
@@ -153,12 +153,12 @@
   "figs/architecture.png" 1728507890.99086 224324 fac942f68181c809efc96cc4ce340e86 ""
   "figs/rnn.png" 1728507031.93309 12154 033e3eed84cbfb5560e8f4f2c021c77b ""
   "figs/transformer.png" 1728506768.84334 10787 6a117f809ed03cece37370ce79fc9b1d ""
-  "main.aux" 1728558826.26672 2869 8f06c58e42c7191e40d2102393eb6ea7 "pdflatex"
+  "main.aux" 1728579698.34699 2869 8f06c58e42c7191e40d2102393eb6ea7 "pdflatex"
   "main.bbl" 1728558824.498 659 3e23a8fdc26242cfd3189ff63b105803 "bibtex main"
-  "main.brf" 1728558826.2679 213 8a8611ffb17bfd52b7dd9de94b3681ac "pdflatex"
-  "main.out" 1728558826.2677 1001 9e5dd2bacc287da592f0626258f44d00 "pdflatex"
-  "main.tex" 1728558822.39109 23376 f68e108839779ff289b55a13a51612ba ""
-  "main.toc" 1728558826.26817 573 ef6106b3b98d50141f39038cd330bcdf "pdflatex"
+  "main.brf" 1728579698.34819 213 8a8611ffb17bfd52b7dd9de94b3681ac "pdflatex"
+  "main.out" 1728579698.34799 1001 9e5dd2bacc287da592f0626258f44d00 "pdflatex"
+  "main.tex" 1728579696.4 23376 cdcd42ec8ce28e35c525cd990d177ae4 ""
+  "main.toc" 1728579698.34848 573 ef6106b3b98d50141f39038cd330bcdf "pdflatex"
   "pre.sty" 1728474458.72397 2141 0a2f46be4ea7d68f3e5927c2fa3698f3 ""
   (generated)
   "main.aux"

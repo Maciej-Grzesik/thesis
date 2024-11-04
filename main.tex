@@ -60,21 +60,28 @@
 
 \section{Motywacja}
 
+Wykluczenie społeczne osób głuchoniemych stanowi poważny problem w społeczeństwie, wynikający z braku mozliwości komunikacji werbalnej w sferze publicznej. 
+Uszkodzenie słuchu, szczególnie w życiu codziennym, powoduje trudności w~komunikacji z otoczeniem, które opiera się na konwencjonalnej mowie.
+Rodzi to problem z mozliwością partycypacji w prostych aktywnościach poczynając od uczestniczenia w zyciu społecznym do m.in. jakości otrzymywanych usług medycznych.
 
-Wykluczenie społeczne osób z niepełnosprawnościami stanowi poważny problem w społeczeństwie.
-Osoby z uszkodzeniem słuchu, szczególnie w życiu codziennym, doświadczają trudności w komunikacji z otoczeniem, które opiera się na konwencjonalnej mowie.
-Język migowy, będący podstawową formą komunikacji dla osób głuchoniemych, nadal jest słabo znany i nauczany wsród osób zdrowych, co pogłębia te trudności.
-Na podstawie badań Pauliny Malczewskiej wynika, że aż 90\% ankietowanych osób głuchych doświadcza alienacji oraz dyskryminacji ze strony osób słyszących \cite{malczewska2011}. \\
-Bariery komunikacyjne między osobami głuchoniemymi a tymi, którzy nie znają języka migowego, stanowią znaczący problem społeczny i medyczny. Przyczynia się to do izolacji społecznej, trudności w dostępie do usług zdrowotnych i ogólnie niszej jakości życia. \\
-Istotnym jest zaadresowanie tego problemu za pomocą aplikacji wspierającej osoby głuchonieme, nie tylko ułatwi to komunikację, ale także przyczyni się do zwiększenia inkluzywności społecznej, zapewniając równe szanse i redukując poziom dyskryminacji.
+Nalezy zaznaczyć, iz znajomość języka migowego wsród ludzi zdrowych ogranicza się do sytuacji w których osoby im bliskie są dotknięte problemem uszkodzonego słuchu.  
+Język ten, będący podstawową formą komunikacji dla osób głuchoniemych nie jest szeroko nauczany a jego znajomość często wymaga zaangazowania się w dodatkowe kursy tudziez szkolenia, nierzadko płatne.
+
+Na podstawie badań Pauliny Malczewskiej wynika, że aż 90\% ankietowanych głuchoniemych doświadcza alienacji oraz dyskryminacji ze strony słyszących \cite{malczewska2011}.
+Zjawiska te niezaprzeczalnie przyczyniają się do przewlekłego obnizenia nastroju, lęku przed byciem postrzeganym przez społeczeństwo oraz ogólnym spadkiem poczucia własnej wartości i samooceny. 
+Te aspekty stawiają solidny grunt pod rozwój chorób psychicznych tj. depresja, epizody nastroju depresyjnego, zaburzenia adaptacyjne czy fobii społecznej co potwierdzają poszczególne wytyczne diagnostyczne zawarte w DSM-5 \cite{american2013diagnostic}.
+
+Istotnym jest zaadresowanie tego problemu za pomocą aplikacji wspierającej osoby głuchonieme.
+Nie tylko ułatwi to komunikację, ale także przyczyni się do zwiększenia inkluzywności społecznej, zapewniając równe szanse i redukując poziom dyskryminacji.
 
 
 \section{Cel}\label{sec:aim}
 
-Celem pracy jest stworzenie aplikacji mobilnej, która umożliwia tłumaczenie języka migowego na tekst w czasie rzeczywistym.
-Funkcjonalność aplikacji oparta jest na transformerach, czyli architekturze głębokiego uczenia maszynowego.
-Dzięki zastosowaniu modeli uczenia maszynowego możliwe będzie klasyfikowanie, a tym samym tłumaczenie języka migowego co ułatwi komunikację osobom głuchym.
-Aplikacja zbudowana jest w oparciu o środowisko Flutter, co pozwala na jej funkcjonowanie na różnych platformach mobilnych (Android i iOS).
+Głównym celem pracy jest stworzenie algorytmu opertego na transofrmerach czyli na architekturze głębokiego uczenia maszynowego, którego zadaniem będzie klasyfikacja znaków języka migowego.
+Istotnym jest zasięgnięcie do rozwiązań opartych na uczeniu maszynowym gdyz rozwiązania oparte na algorytmice nie sprawdzają się w przypadkach dotyczących widzenia komputerowego, które jest znaczącym elementem tej pracy. [elaborate on this]
+Umozliwi to tłumaczenie języka migowego na tekst w czasie rzeczywistym, co ułatwi komunikację osobom głuchoniemym. 
+
+Sam algorytm zaimplementowany zostanie w aplikacji mobilnej docelowo dedykowanej na smartfony z systemem oparacyjnym Android oraz iOS. Mozliwe jest to dzięki wykorzystaniu środowiska Flutter, które pozwala na tworzenie oprogramowania opartego o język Dart, a następnie na kompilowanie kodu przy wykorzystaniu natywnych narzędzi kompilacyjnych (Android Studio dla systemu Android; Xcode dla systemu iOS).
 
 \section{Zakres}\label{sec:scope}
 

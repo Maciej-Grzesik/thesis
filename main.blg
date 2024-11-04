@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: refs.bib
+Warning--entry type for "mamczur2020" isn't style-file defined
+--line 48 of file refs.bib
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            466 strings with 4221 characters,
+and the built_in function-call counts, 723 in all, are:
+= -- 52
+> -- 38
+< -- 1
++ -- 15
+- -- 11
+* -- 30
+:= -- 119
+add.period$ -- 11
+call.type$ -- 4
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 36
+empty$ -- 76
+format.name$ -- 11
+if$ -- 164
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 3
+newline$ -- 22
+num.names$ -- 4
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 6
+swap$ -- 11
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 5
+width$ -- 5
+write$ -- 41
+(There was 1 warning)

@@ -2,20 +2,16 @@
 
 \bibitem{malczewska2011}
 P.~Malczewska.
-\newblock Izolacja społeczna osób z uszkodzonym słuchem jako wspólny obszar
-  badań pedagogiki i antropologii.
-\newblock {\em Pedagogika a etnologia i antropologia kulturowa. Wspólne
-  obszary badań}, page 128, 2011.
+\newblock Izolacja społeczna osób z uszkodzonym słuchem jako wspólny obszar badań pedagogiki i antropologii.
+\newblock {\em Pedagogika a etnologia i antropologia kulturowa. Wspólne obszary badań}, page 128, 2011.
 
 \bibitem{american2013diagnostic}
 American~Psychiatric Association.
-\newblock {\em Diagnostic and Statistical Manual of Mental Disorders
-  (DSM-5{\textregistered})}.
+\newblock {\em Diagnostic and Statistical Manual of Mental Disorders (DSM-5{\textregistered})}.
 \newblock American Psychiatric Publishing, 2013.
 
 \bibitem{vaswani2023attentionneed}
-Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
-  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
 \newblock Attention is all you need, 2023.
 
 \bibitem{mamczur2020}
@@ -25,18 +21,13 @@ M.~Mamczur.
 
 \bibitem{jm3}
 Daniel Jurafsky and James~H. Martin.
-\newblock {\em Speech and Language Processing: An Introduction to Natural
-  Language Processing, Computational Linguistics, and Speech Recognition with
-  Language Models}.
+\newblock {\em Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models}.
 \newblock 2024.
 \newblock Online manuscript released August 20, 2024.
 
 \bibitem{DBLP:journals/corr/abs-2010-11929}
-Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
-  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
-  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
-\newblock An image is worth 16x16 words: Transformers for image recognition at
-  scale.
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
 \newblock {\em CoRR}, abs/2010.11929, 2020.
 
 \end{thebibliography}

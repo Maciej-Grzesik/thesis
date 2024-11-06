@@ -98,12 +98,12 @@ Tak skonstruowany i wyuczony model następnie zostanie zkonwertowany do odpowied
 \chapter{Teoria}
 
 Kluczowym aspektem pracy, na której bazuje duża część funkcjonalności jest model uczenia maszynowego oparty na architekturze transformerów. 
-Przy ich pomocy aplikacja będzie w stanie rozpoznawać znaki języka migowego w czasie rzeczywistym.
+Przy jego pomocy aplikacja będzie w stanie rozpoznawać znaki języka migowego w czasie rzeczywistym.
 Transformery stanowią szczególną część szeroko pojętej dziedziny uczenia maszynowego, znajdują one zastosowanie w przetwarzaniu języka naturalnego, wizji komputerowej, ale~także w audio i~przetwarzaniu multimedialnym. \\
 W odróżnieniu od poprzednio stosowanych modeli uczenia maszynowego opierających się na podejściu rekurencyjnym i mechanizmie uwagi, naukowcy pracujący dla firmy Google zaproponowali rozwiązanie wykorzystujące jedynie mechanizm uwagi. 
-Wyzbycie się rekurencyjności z w procesie uczenia przyczyniło się do zwiększenia równoległości, skutkiem czego jest znaczne przyspieszenie czasu uczenia modelu przy zachowaniu wysokiej precyzji \cite{vaswani2023attentionneed}.
+Jest to istotny element, który róznicuje transformery od rekurencyjnych modeli uczenia maszynowego.
+Wyzbycie się rekurencyjności w procesie uczenia przyczyniło się do zwiększenia równoległości, skutkiem czego jest znaczne przyspieszenie czasu uczenia modelu przy zachowaniu wysokiej precyzji \cite{vaswani2023attentionneed}.
 
-Istotnym elementem, który różnicuje transformery od rekurencyjnych modeli uczenia maszynowego jest mechanizm uwagi. 
 W tradycyjnych modelach rekurencyjnych sieci neuronowych (RNN) dane przetwarzane są sekwencyjnie tzn., że są analizowane krok po kroku (patrz \ref{fig:rnn_schema}) \cite{mamczur2020} co skutkuje ograniczeniami m.in. w równoległości przetwarzaniu danych.
 
 
@@ -123,27 +123,49 @@ Rozwiązania inżynieryjne wykorzystane w transformerach pozwalają modelom na p
 	\label{fig:transformer_schema}
 \end{figure}
 
-W praktyce oznacza to, że uczenie transformerów przebiega w określonej stałej ilości $O(1)$ sekwencyjnie wykonywanych operacji, modele RNN wymagają natomiast $O(n)$ sekwencyjnie wykonywanych operacji co sprawia, że są mniej wydajne przy dłuższych sekwencjach.
+W praktyce oznacza to, że uczenie transformerów przebiega w określonej stałej ilości $O(1)$ sekwencyjnie wykonywanych operacji, modele RNN wymagają natomiast $O(n)$ sekwencyjnie wykonywanych operacji. %co sprawia, że są mniej wydajne przy dłuższych sekwencjach. 
+% Autorzy uzasadniają wybór mechanizmu samo-uwagi ponad znane już sieci konwolucyjne oraz sieci rekurencyjne faktem iz złożoność obliczeniowa dla poszczególnych warstw jest mniejsza, a wiele operacji wykonywanych podczas trenowania modelu mozna zrownoleglic.
+% Dodatkowo odległości pomiędzy zależnościami 
+
+% The third is the path length between long-range dependencies in the network. Learning long-range
+% dependencies is a key challenge in many sequence transduction tasks. 
+% One key factor affecting the
+% ability to learn such dependencies is the length of the paths forward and backward signals have to
+% traverse in the network. 
+% The shorter these paths between any combination of positions in the input
+% and output sequences, the easier it is to learn long-range dependencies [12]. 
+% Hence we also compare
+% the maximum path length between any two input and output positions in networks composed of the
+% different layer types.
 
 \section{Architektura}
 
-Na architekturę transformera składają się dwa głównie bloki: koder oraz dekoder, natomiast najpierw należy zwrócić uwagę na warstwę zwaną embedding layer.
-Warstwa ta zamienia dane wejściowe (słowa, obrazy) na ich reprezentacje w postaci wektorów.
+Na architekturę transformera składają się dwa główne komponenty: koder oraz dekoder. %, natomiast najpierw 
+
+Koder składa się z warstwy osadzeń (eng. embedding layer) oraz kodowania pozycyjnego, po których następuje wiele warstw kodera.
+Warstwa osadzeń zamienia dane wejściowe (słowa, obrazy) na ich reprezentacje w postaci wektorów.
 Zazwyczaj reprezentacja jest wektorem o wartości rzeczywistej, który koduje znaczenie słowa w taki sposób, że oczekuje się, że słowa znajdujące się bliżej w przestrzeni wektorowej będą miały podobne znaczenie \cite{jm3}.
 Osadzanie słów można uzyskać za pomocą modelowania języka i technik uczenia się cech, w których słowa lub frazy ze słownictwa są mapowane na wektory liczb rzeczywistych.
+
 W przypadku modeli Vision Transformer (ViT) proces osadzania obrazów wygląda inaczej niż w przypadku osadzania słów.
-Obrazy są dzielone na małe, prostokątne fragmenty (patches), które następnie przekształcane są na wektory.
-Zatem zamiast słow przetwarzane są fragmenty obrazów które dodatkowo mają przypisaną pozycje co pozwala modelowi rozróżnić położenie każdego fragmentu \cite{DBLP:journals/corr/abs-2010-11929}.
+Obrazy są dzielone na małe, prostokątne fragmenty (eng. patches), które następnie przekształcane są na wektory.
+Zatem zamiast słow przetwarzane są fragmenty obrazów które dodatkowo mają przypisaną pozycje co pozwala modelowi rozróżnić położenie każdego fragmentu w konteście całego obrazu.
+W celu przeprowadzenia klasyfikacji jako parametr wejściowy sekwencji podaje się poza odpowiednio wydzielonymi fragmentami obrazu równiez ,,token klasyfikacyjny'' (eng. classification token).
+Proces ten przedstawiono na schemacie \ref{fig:vit_scheme} \cite{DBLP:journals/corr/abs-2010-11929}, a struktura sieci transformerowej jak podnoszą autorzy jest mozliwie najblizsza do struktury zaprezentowanej w artykule ,,Attention is All You Need''.
 
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=0.50]{figs/vit_scheme.pdf}
+	\caption{Schemat uczenia modelu Transformer Vision}
+	\label{fig:vit_scheme}
+\end{figure}
 
-Koder składa się z warstwy embedding layer oraz kodowania pozycyjnego, po których następuje wiele warstw kodera.
-Jego głównym zadaniem jest przekształcanie wejściowych tokenów w kontekstowe reprezentacje. 
+Głównym zadaniem kodera jest przekształcanie wejściowych tokenów w kontekstowe reprezentacje. 
 W przeciwieństwie do wcześniejszych modeli, które przetwarzały tokeny niezależnie, koder w transformerze przechwytuje kontekst każdego tokena w odniesieniu do całej sekwencji.
 Ponieważ transformery nie mają mechanizmu rekurencji, takiego jak RNN, używają kodowania pozycyjnego dodanego do warstwy osadzeń w celu dostarczenia informacji o pozycji każdego tokena w sekwencji.
 Każda z warstw kodera składa się z dwóch głownych komponentów: mechanizmu samo-uwagi i sieci neuronowej typu feed-forward. 
-Koder pobiera dane wejściowe jako sekwencję wektorów wejściowych, stostuje mechanizm samouwagi aby utworzyć pośrednią sekwencję wektorów, a następnie stosuje warstwę sprzężenia zwrotnego dla każdego wektora indywidualnie.
-Warstwy kodera są ułożone w stos. 
-Pierwsza warstwa kodera pobiera sekwencję wektorów wejściowych z warstwy osadzania, tworząc sekwencję wektorów. 
+Koder pobiera dane wejściowe jako sekwencję wektorów wejściowych, stosuje mechanizm samo-uwagi aby utworzyć pośrednią sekwencję wektorów, a następnie stosuje warstwę feed-forward dla każdego wektora indywidualnie.
+Warstwy kodera są ułożone w stos, gdzie pierwsza warstwa kodera pobiera sekwencję wektorów wejściowych z warstwy osadzania, tworząc sekwencję wektorów. 
 Ta sekwencja wektorów jest przetwarzana przez drugi koder i tak dalej. 
 Dane wyjściowe z ostatniej warstwy kodera są następnie wykorzystywane przez dekoder.
 
@@ -178,7 +200,6 @@ W związku z tym nie ma potrzeby maskowania w mechanizmie uwagi krzyżowej.
 %     \item Feed Forward jest to sieć, której zadaniem jest uproszczenie tłumaczenia wektora, aby łatwiej można było przerobić transformerowi wyniki parowań. Następnie w etapie linear layer przekształcane są wyniki mające na ten sam wymiar co dane wejściowe. Następnie przy użyciu funkcji softmax zmieniane są wyniki prawdopodobieństwa.
 % \end{itemize}
 
-\pagebreak
 Poszczególne bloki architektury wraz z przepływem informacji w modelu zostały zaprezentowane na schemacie \ref{fig:transformer_architecture} \cite{vaswani2023attentionneed}.
 
 \begin{figure}[H]
@@ -189,7 +210,7 @@ Poszczególne bloki architektury wraz z przepływem informacji w modelu zostały
 \end{figure}
 
 \section{Zasada działania}
-Działanie transformera opiera się na mechanizmie tzw. self-attention oraz na warstawie kodującej i warstwie dekodującej.
+Działanie transformera opiera się na mechanizmie tzw. self-attention oraz na omówionych warstwach kodujących i dekodujących.
 W ramach mechanizmu self-attention wykonywane są dwie główne operacje zwane scaled dot-product attention oraz multi-head attention.
 
 \subsection{Scaled dot-product}
@@ -199,9 +220,16 @@ Następnie wykonuje się iloczyn skalarny pomiędzy kluczami i zapytaniami, któ
 Na koniec obliczana jest funkcja softmax w celu obliczenia wag. 
 W praktyce macierz wyników obliczana jest na macierzach kluczy, wartosci i zapytań jak pokazano we wzorze \ref{eq:attention}.  
 
-\begin{equation} \label{eq:attention}
+\begin{equation}
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V
+    \label{eq:attention}
 \end{equation}
+% Przykładowe równanie to
+% \begin{equation}
+%     E = m c^2
+%     \label{eq:Emc2},
+% \end{equation}
+% gdzie $E$ oznacza \dots\
     
 Jak podkreślają autorzy, czynnik czynnik faktoryzujący $\frac{1}{d_{k}}$ przyczynia się do zwiększenia szybkości i jest bardziej efektywny pod względem wykorzystania pamięci, ze względu na możliwość wykorzystania zoptymalizowanych algorytmów wykonujących obliczenia na macierzach.
 Rozwiązanie to zostało zaproponowane w kontrze do istniejącej już funkcji uwagi zwanej additive attention. 

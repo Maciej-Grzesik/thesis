@@ -23,4 +23,20 @@ M.~Mamczur.
 \newblock Czym jest i jak działa transformer sieć neuronowa?, March 2020.
 \newblock Dostęp: 23 maj 2024.
 
+\bibitem{jm3}
+Daniel Jurafsky and James~H. Martin.
+\newblock {\em Speech and Language Processing: An Introduction to Natural
+  Language Processing, Computational Linguistics, and Speech Recognition with
+  Language Models}.
+\newblock 2024.
+\newblock Online manuscript released August 20, 2024.
+
+\bibitem{DBLP:journals/corr/abs-2010-11929}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
+  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock {\em CoRR}, abs/2010.11929, 2020.
+
 \end{thebibliography}

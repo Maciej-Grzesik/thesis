@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  6 NOV 2024 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.22)  6 NOV 2024 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -654,14 +654,14 @@ Package pdftex.def Info: figs/transformer.png  used on input line 121.
  <./figs/rnn.png>]
 
 [10{C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc} <./figs/transformer.png>]
-<figs/architecture.png, id=124, 1525.7pt x 2247.39626pt>
-File: figs/architecture.png Graphic file (type png)
-<use figs/architecture.png>
-Package pdftex.def Info: figs/architecture.png  used on input line 175.
-(pdftex.def)             Requested size: 305.1346pt x 449.4713pt.
-
 
 [11]
+<figs/architecture.png, id=132, 1525.7pt x 2247.39626pt>
+File: figs/architecture.png Graphic file (type png)
+<use figs/architecture.png>
+Package pdftex.def Info: figs/architecture.png  used on input line 186.
+(pdftex.def)             Requested size: 305.1346pt x 449.4713pt.
+
 
 [12 <./figs/architecture.png>] (main.bbl (main.brf)
 \tf@brf=\write5
@@ -683,20 +683,20 @@ L3 programming layer <2024-09-10>
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3410B64918E786C5E0F45DEE8A814699;1105.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 35504AD9771C907B0ADD78D34E335B0E;268.
+(rerunfilecheck)             Checksum: 93C299A178F2F5CF8081A9288390F74E;378.
  ) 
 Here is how much of TeX's memory you used:
- 14106 strings out of 473898
- 227471 string characters out of 5726006
- 629621 words of memory out of 5000000
- 36678 multiletter control sequences out of 15000+600000
+ 14116 strings out of 473898
+ 227689 string characters out of 5726006
+ 629701 words of memory out of 5000000
+ 36686 multiletter control sequences out of 15000+600000
  582739 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,505b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Maciej\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plcsc10.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plex10.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi12.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi6.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi8.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plsy10.pfb><C:/Users/Maciej/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti12.pfb>
-Output written on main.pdf (15 pages, 239986 bytes).
+Output written on main.pdf (15 pages, 245134 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

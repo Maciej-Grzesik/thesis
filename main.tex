@@ -128,17 +128,27 @@ W praktyce oznacza to, że uczenie transformerów przebiega w określonej stałe
 \section{Architektura}
 
 Na architekturę transformera składają się dwa głównie bloki: koder oraz dekoder, natomiast najpierw należy zwrócić uwagę na warstwę zwaną embedding layer.
- 
+Warstwa ta zamienia dane wejściowe (słowa, obrazy) na ich reprezentacje w postaci wektorów.
+Zazwyczaj reprezentacja jest wektorem o wartości rzeczywistej, który koduje znaczenie słowa w taki sposób, że oczekuje się, że słowa znajdujące się bliżej w przestrzeni wektorowej będą miały podobne znaczenie \cite{jm3}.
+Osadzanie słów można uzyskać za pomocą modelowania języka i technik uczenia się cech, w których słowa lub frazy ze słownictwa są mapowane na wektory liczb rzeczywistych.
+W przypadku modeli Vision Transformer (ViT) proces osadzania obrazów wygląda inaczej niż w przypadku osadzania słów.
+Obrazy są dzielone na małe, prostokątne fragmenty (patches), które następnie przekształcane są na wektory.
+Zatem zamiast słow przetwarzane są fragmenty obrazów które dodatkowo mają przypisaną pozycje co pozwala modelowi rozróżnić położenie każdego fragmentu \cite{DBLP:journals/corr/abs-2010-11929}.
 
-Koder składa się z warstwy embedding layer, po której następuje wiele warstw kodera.
-Każda z warstw kodera składa się z dwóch głownych komponentów: mechanizmu samo-uwagi i warstwy sprzężenia zwrotnego. 
+
+Koder składa się z warstwy embedding layer oraz kodowania pozycyjnego, po których następuje wiele warstw kodera.
+Jego głównym zadaniem jest przekształcanie wejściowych tokenów w kontekstowe reprezentacje. 
+W przeciwieństwie do wcześniejszych modeli, które przetwarzały tokeny niezależnie, koder w transformerze przechwytuje kontekst każdego tokena w odniesieniu do całej sekwencji.
+Ponieważ transformery nie mają mechanizmu rekurencji, takiego jak RNN, używają kodowania pozycyjnego dodanego do warstwy osadzeń w celu dostarczenia informacji o pozycji każdego tokena w sekwencji.
+Każda z warstw kodera składa się z dwóch głownych komponentów: mechanizmu samo-uwagi i sieci neuronowej typu feed-forward. 
 Koder pobiera dane wejściowe jako sekwencję wektorów wejściowych, stostuje mechanizm samouwagi aby utworzyć pośrednią sekwencję wektorów, a następnie stosuje warstwę sprzężenia zwrotnego dla każdego wektora indywidualnie.
 Warstwy kodera są ułożone w stos. 
 Pierwsza warstwa kodera pobiera sekwencję wektorów wejściowych z warstwy osadzania, tworząc sekwencję wektorów. 
 Ta sekwencja wektorów jest przetwarzana przez drugi koder i tak dalej. 
 Dane wyjściowe z ostatniej warstwy kodera są następnie wykorzystywane przez dekoder.
 
-Dekoder składa się z warstwy embedding layer, po której następuje wiele warstw dekodera.
+Dekoder podobnie do kodera, składa się z warstwy embedding layer oraz kodowania pozycyjnego, po której następuje wiele warstw dekodera.
+Rola dekodera opiera się na tworzeniu sekwencji tekstowych.
 Każdy dekoder składa się z trzech głównych elementów: maskowanego mechanizmu samo-uwagi, mechanizmu uwagi krzyżowej i sieci neuronowej typu feed-forward.
 Dekoder działa w podobny sposób jak koder, ale wstawiony jest dodatkowy mechanizm uwagi, który zamiast tego czerpie istotne informacje z kodowań generowanych przez kodery. 
 Mechanizm ten można również nazwać uwagą kodera-dekodera.
@@ -168,6 +178,7 @@ W związku z tym nie ma potrzeby maskowania w mechanizmie uwagi krzyżowej.
 %     \item Feed Forward jest to sieć, której zadaniem jest uproszczenie tłumaczenia wektora, aby łatwiej można było przerobić transformerowi wyniki parowań. Następnie w etapie linear layer przekształcane są wyniki mające na ten sam wymiar co dane wejściowe. Następnie przy użyciu funkcji softmax zmieniane są wyniki prawdopodobieństwa.
 % \end{itemize}
 
+\pagebreak
 Poszczególne bloki architektury wraz z przepływem informacji w modelu zostały zaprezentowane na schemacie \ref{fig:transformer_architecture} \cite{vaswani2023attentionneed}.
 
 \begin{figure}[H]

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1730853792.85155 "main.aux" "main.bbl" "main" 1730853843.26998 0
-  "./refs.bib" 1730849400.39082 4176 3f497571e42b90d9fa94998eb97d941e ""
+["bibtex main"] 1730891540.32882 "main.aux" "main.bbl" "main" 1730891542.54007 0
+  "./refs.bib" 1730891468.73012 5628 7818267bdb8a76c64d5b4c09cb5b2f6d ""
   "C:/Users/Maciej/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/unsrt.bst" 1291864736 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1730853842.35195 3372 45c4bed94a62e010c9b0015e3ed5c836 "pdflatex"
+  "main.aux" 1730891541.64869 3640 3864f576794c5bc8aec260fe1f44cee8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1730853841.24741 "c:/Users/Maciej/desktop/thesis/main.tex" "main.pdf" "main" 1730853843.27074 0
+["pdflatex"] 1730891540.68435 "c:/Users/Maciej/desktop/thesis/main.tex" "main.pdf" "main" 1730891542.54084 0
   "C:/Users/Maciej/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730850127.89903 86553 91af261fa287312f2fb1f66a097366be ""
   "C:/Users/Maciej/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1730739372.33103 17172 8f4f097dfa5efb79aa297d8d1303da4e ""
   "C:/Users/Maciej/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1729621745.87796 11948751 4027bdeb2c284924d18079c0c07ae462 ""
@@ -153,16 +153,16 @@
   "C:/Users/Maciej/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Maciej/AppData/Local/Programs/MiKTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "C:/Users/Maciej/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/Maciej/desktop/thesis/main.tex" 1730853840.61517 32371 56df7d77870e0a69d12c11758e7ab0d8 ""
+  "c:/Users/Maciej/desktop/thesis/main.tex" 1730891537.64127 33969 34789afb19d5efef7f1e7b0f45685c4b ""
   "figs/PWrLogo.eps" 1729616873.2007 10669 3b59cfad3280958163cb6c42c28e1cdc ""
   "figs/architecture.png" 1729616873.20269 224324 fac942f68181c809efc96cc4ce340e86 ""
   "figs/rnn.png" 1729616873.20319 12154 033e3eed84cbfb5560e8f4f2c021c77b ""
   "figs/transformer.png" 1729616873.20665 10787 6a117f809ed03cece37370ce79fc9b1d ""
-  "main.aux" 1730853842.35195 3372 45c4bed94a62e010c9b0015e3ed5c836 "pdflatex"
-  "main.bbl" 1730853793.22896 906 f2743df5b3d735d58830d752c27db7b3 "bibtex main"
-  "main.brf" 1730853842.35542 268 35504ad9771c907b0add78d34e335b0e "pdflatex"
-  "main.out" 1730853842.35343 1105 3410b64918e786c5e0f45dee8a814699 "pdflatex"
-  "main.toc" 1730853842.35691 714 1255e1cfdd03e37d075e57b9c682f409 "pdflatex"
+  "main.aux" 1730891541.64869 3640 3864f576794c5bc8aec260fe1f44cee8 "pdflatex"
+  "main.bbl" 1730891540.58632 1606 b80e20aec84219a8ca13870bd0cb6e38 "bibtex main"
+  "main.brf" 1730891541.65216 378 93c299a178f2f5cf8081a9288390f74e "pdflatex"
+  "main.out" 1730891541.65018 1105 3410b64918e786c5e0f45dee8a814699 "pdflatex"
+  "main.toc" 1730891541.65414 714 1255e1cfdd03e37d075e57b9c682f409 "pdflatex"
   "pre.sty" 1730850114.10317 2248 78f811a1576807d64986858f12830c5d ""
   (generated)
   "main.aux"

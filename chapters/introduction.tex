@@ -1,0 +1,39 @@
+\chapter{Wprowadzenie}\label{ch:intro}
+
+\section{Motywacja}
+
+Wykluczenie społeczne osób głuchoniemych stanowi poważny problem w społeczeństwie, wynikający z braku mozliwości komunikacji werbalnej w sferze publicznej. 
+Uszkodzenie słuchu, szczególnie w życiu codziennym, powoduje trudności w~komunikacji z otoczeniem, które opiera się na konwencjonalnej mowie.
+Rodzi to problem z mozliwością partycypacji w prostych aktywnościach poczynając od uczestniczenia w zyciu społecznym do m.in. jakości otrzymywanych usług medycznych.
+
+Nalezy zaznaczyć, iz znajomość języka migowego wsród ludzi zdrowych ogranicza się do sytuacji w których osoby im bliskie są dotknięte problemem uszkodzonego słuchu.  
+Język ten, będący podstawową formą komunikacji dla osób głuchoniemych nie jest szeroko nauczany a jego znajomość często wymaga zaangazowania się w dodatkowe kursy tudziez szkolenia, nierzadko płatne.
+
+Na podstawie badań Pauliny Malczewskiej wynika, że aż 90\% ankietowanych głuchoniemych doświadcza alienacji oraz dyskryminacji ze strony słyszących \cite{malczewska2011}.
+Zjawiska te niezaprzeczalnie przyczyniają się do przewlekłego obnizenia nastroju, lęku przed byciem postrzeganym przez społeczeństwo oraz ogólnym spadkiem poczucia własnej wartości i samooceny. 
+Te aspekty stawiają solidny grunt pod rozwój chorób psychicznych tj. depresja, epizody nastroju depresyjnego, zaburzenia adaptacyjne czy fobii społecznej co potwierdzają poszczególne wytyczne diagnostyczne zawarte w DSM-5 \cite{american2013diagnostic}.
+
+Istotnym jest zaadresowanie tego problemu za pomocą aplikacji wspierającej osoby głuchonieme.
+Nie tylko ułatwi to komunikację, ale także przyczyni się do zwiększenia inkluzywności społecznej, zapewniając równe szanse i redukując poziom dyskryminacji.
+
+
+\section{Cel}\label{sec:aim}
+
+Głównym celem pracy jest stworzenie algorytmu opertego na transofrmerach czyli na architekturze głębokiego uczenia maszynowego, którego zadaniem będzie klasyfikacja znaków języka migowego.
+Istotnym jest zasięgnięcie do rozwiązań opartych na uczeniu maszynowym gdyz rozwiązania oparte na algorytmice nie sprawdzają się w przypadkach dotyczących widzenia komputerowego, które jest znaczącym elementem tej pracy. [elaborate on this]
+Umozliwi to tłumaczenie języka migowego na tekst w czasie rzeczywistym, co ułatwi komunikację osobom głuchoniemym. 
+
+Sam algorytm zaimplementowany zostanie w aplikacji mobilnej docelowo dedykowanej na smartfony z systemem oparacyjnym Android oraz iOS. Mozliwe jest to dzięki wykorzystaniu środowiska Flutter, które pozwala na tworzenie oprogramowania opartego o język Dart, a następnie na kompilowanie kodu przy wykorzystaniu natywnych narzędzi kompilacyjnych (Android Studio dla systemu Android; Xcode dla systemu iOS).
+
+\section{Zakres}\label{sec:scope}
+
+W ramach pracy inżynierskiej zaprojektowany zostanie przyjazny interfejs użytkownika, który umożliwi proste korzystanie z aplikacji zarówno przez osoby głuche, jak i słyszące.
+Wykorzystanie środowiska Flutter pozwoli na implementacje interaktywnego interfejsu użytkownika przy wykorzystaniu wbudowanych funkcjonalności oraz zewnętrznych modułów utrzymywanych przez społeczność programistów.
+Dodatkowo zostanie wyeliminowana potrzeba pisania kodu w natywnym dla danego środowiska języku, co zapewnia aplikacji możliwość działania na różnych mobilnych systemach operacyjnych.
+
+Zaimplementowany zostanie również model mający na celu klasyfikowanie odpowiednich filmów wideo do odpowiadającego im tesktu.
+W tym etapie projektu zostaną zastosowane odpowiednie algorytmy, które umożliwią skuteczne uczenie modelu na podstawie zebranych danych dotyczących gestów języka migowego.
+Następnie za pomocą odpowiednio napisanego potoku dane zostaną przesłane do modelu tym samym zaczynając proces uczenia.
+Proces ten będzie obejmował zarówno fazę wstępną, w której model będzie dostosowywany do charakterystyki danych, jak i fazę walidacji, w której oceni się jego dokładność i zdolność do generalizacji gestów języka migowego.
+Istotnym jest również przeprowadzenie testów funkcjonalności modelu w warunkach rzeczywistych aby potwierdzić jego poprawne działanie lub wprowadzanie ewentualnych poprawek.  
+Tak skonstruowany i wyuczony model następnie zostanie zkonwertowany do odpowiedniego formatu który następnie zostanie zintegrowany z aplikacja mobilną.

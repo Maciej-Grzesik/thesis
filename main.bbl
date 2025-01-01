@@ -30,4 +30,19 @@ Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua
 \newblock An image is worth 16x16 words: Transformers for image recognition at scale.
 \newblock {\em CoRR}, abs/2010.11929, 2020.
 
+\bibitem{10.1145/3577190.3614143}
+Cristina Luna-Jim\'{e}nez, Manuel Gil-Mart\'{\i}n, Ricardo Kleinlein, Rub\'{e}n San-Segundo, and Fernando Fern\'{a}ndez-Mart\'{\i}nez.
+\newblock Interpreting sign language recognition using transformers and mediapipe landmarks.
+\newblock In {\em Proceedings of the 25th International Conference on Multimodal Interaction}, ICMI '23, page 373–377, New York, NY, USA, 2023. Association for Computing Machinery.
+
+\bibitem{dart_language_important_concepts}
+Dart Team.
+\newblock Dart language - important concepts, 2024.
+\newblock Dostęp: 22 grudnia 2024.
+
+\bibitem{cleanArchitecture}
+Robert~C. Martin.
+\newblock The clean architecture, 2012.
+\newblock Dostęp: 22 grudnia 2024.
+
 \end{thebibliography}

@@ -1,0 +1,39 @@
+\chapter{Wnioski}
+\section{Analiza zastosowania transformerów}
+Ostatecznnie zastosowany model nie odniósł sukcesu w rozpoznawaniu znaków języka migowego.
+Ciężko jednoznacznie określić przyczynę takiego stanu rzeczy, jednakże można wskazać na kilka potencjalnych przyczyn.
+Pierwszą z nich jest zastosowanie modelu wytrenowanego na niewystarczająco dużym zbiorze danych.
+Wytrenowanie modelu na większym zbiorze danych mogłoby pozwolić na uzyskanie lepszych wyników.
+
+\section{Perspektywa rozwoju}
+Istotnym czynnikiem wymagającym dalszego rozwozju jest zastosowanie większego zbioru danych do wytrenowania modelu.
+W tym celu należałoby zebrać odpowiednie dane w postaci filmów wideo, a następnie odpowiednio je przetworzyć w celu uzyskania danych w postaci sekwencji punktów charakterystycznych dłoni, rąk oraz głowy.
+Obiecującym zbiorem danych jest zbiór How2Sign, który jest dostępny na licencji niekomercyjnej, jednak tym samym zawiera znaczną ilość danych.
+
+Warto również zaznaczyć, iż zbieranie dodatkowych danych mogłoby być przeprowadzane z poziomu aplikacji mobilnej, gdzie użytkownik mógłby nagrywać swoje znaki języka migowego, a następnie przesyłać je do serwera w celu dalszej analizy.
+W takim przypadku zastosowanie bazy danych przechowującej nagrane znaki języka migowego byłoby konieczne.
+Takie rozwiązanie pozwoliłoby na zwiększenie ilości danych treningowych, nie tylko w angielskim języku migoweym ale i również w innych językach.
+
+Takie rozwiązania wymagały by zaprzęgnięcia znacznej ilości zasobów obliczeniowych.
+Przydatnymi narzędziami w takim przypadku zdecydowanie były rozwiązania typu Cloud Computing, które nie tylko pozwoliłyby na przechowywanie danych, ale również na ich przetwarzanie.
+
+% Rozdział 2: Wnioski
+% Rozdział „Wnioski” powinien zawierać podsumowanie tego, co udało się osiągnąć podczas pracy, wnioski płynące z przeprowadzonych badań oraz praktyczne aspekty wdrożenia rozwiązania.
+
+% 2.1 Ocena skuteczności aplikacji
+% Podsumuj, jak skuteczna jest aplikacja w rozpoznawaniu znaków języka migowego. Czy spełnia założone cele, takie jak dokładność modelu, czas odpowiedzi i łatwość użytkowania?
+
+% Przykład:
+% „Aplikacja okazała się skuteczna w rozpoznawaniu znaków języka migowego, osiągając wysoką dokładność, stabilność i płynność działania, co czyni ją użytecznym narzędziem w kontekście nauki i komunikacji.”
+
+% 2.2 Analiza zastosowania transformatorów
+% Omów, jakie korzyści płyną z użycia transformatorów w tym kontekście. Porównaj je z innymi rozwiązaniami, które mogłyby zostać zastosowane, i uzasadnij wybór transformatora.
+
+% Przykład:
+% „Wykorzystanie modelu opartego na transformatorze umożliwiło uzyskanie wysokiej precyzji w rozpoznawaniu znaków, a także pozwoliło na efektywne przetwarzanie sekwencji wideo, co w przypadku innych metod, takich jak sieci CNN, było bardziej czasochłonne.”
+
+% 2.3 Rekomendacje na przyszłość
+% Jeśli to możliwe, zaproponuj możliwe kierunki rozwoju aplikacji. Na przykład poprawa dokładności, dodanie nowych funkcji, lepsza optymalizacja dla urządzeń mobilnych czy wsparcie dla większych zbiorów danych.
+
+% Przykład:
+% „Aplikacja może zostać rozwinięta poprzez rozszerzenie bazy danych o dodatkowe znaki języka migowego, co poprawiłoby jej dokładność. Kolejnym krokiem mogłoby być zwiększenie efektywności modelu poprzez techniki takie jak pruned transformers, co zmniejszyłoby czas odpowiedzi aplikacji.”

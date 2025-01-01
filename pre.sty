@@ -1,6 +1,7 @@
 \usepackage[MeX]{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{forest} %ASDASDAS
 \usepackage{amsfonts}
 \usepackage{array}
 \usepackage{amsmath}
@@ -87,3 +88,17 @@
 \definecolor{links}{rgb}{0, 0, 0.8}
 \usepackage[colorlinks=true,citecolor=links,linkcolor=links,urlcolor=links,pagebackref=true]{hyperref}
 \usepackage{footnotebackref}
+
+%%%%%SKIBIDIBI WA PAP PAP
+\definecolor{folderbg}{RGB}{124,166,198}
+\definecolor{folderborder}{RGB}{110,144,169}
+
+\def\Size{4pt}
+\tikzset{
+  folder/.pic={
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.05*\Size,0.2\Size+5pt) rectangle ++(.75*\Size,-0.2\Size-5pt);  
+    \filldraw[draw=folderborder,top color=folderbg!50,bottom color=folderbg]
+      (-1.15*\Size,-\Size) rectangle (1.15*\Size,\Size);
+  }
+}

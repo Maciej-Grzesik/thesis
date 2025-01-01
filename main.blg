@@ -1,50 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/theory.aux
+A level-1 auxiliary file: chapters/methodology.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: chapters/conclusions.aux
+A level-1 auxiliary file: chapters/summary.aux
 The style file: unsrt.bst
 Database file #1: refs.bib
 Warning--entry type for "mamczur2020" isn't style-file defined
 --line 48 of file refs.bib
 Warning--empty publisher in jm3
-You've used 6 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            477 strings with 4849 characters,
-and the built_in function-call counts, 1178 in all, are:
-= -- 79
-> -- 84
-< -- 1
-+ -- 31
-- -- 25
-* -- 64
-:= -- 204
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 4
+            500 strings with 5549 characters,
+and the built_in function-call counts, 1867 in all, are:
+= -- 146
+> -- 109
+< -- 2
++ -- 41
+- -- 32
+* -- 85
+:= -- 295
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 54
-empty$ -- 109
-format.name$ -- 25
-if$ -- 257
+cite$ -- 10
+duplicate$ -- 95
+empty$ -- 178
+format.name$ -- 32
+if$ -- 431
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 33
-num.names$ -- 6
-pop$ -- 33
+int.to.str$ -- 9
+missing$ -- 7
+newline$ -- 48
+num.names$ -- 9
+pop$ -- 51
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 27
+skip$ -- 62
 stack$ -- 0
-substring$ -- 6
-swap$ -- 13
-text.length$ -- 1
+substring$ -- 24
+swap$ -- 35
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 7
-width$ -- 7
-write$ -- 63
+while$ -- 11
+width$ -- 10
+write$ -- 97
 (There were 2 warnings)

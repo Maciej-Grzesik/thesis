@@ -1,0 +1,33 @@
+\chapter{Wyniki}
+\section{Funkcjonalność aplikacji}
+Aplikacja mobilna została oparta o nastepujące funkcjonalności:
+\begin{itemize}
+    \item Rozpoznawanie znaków języka migowego: aplikacja mobilna pozwala użytkownikowi na nagranie znaku języka migowego, następnie wynik klasyfikacji przeprowadzony od strony serwera jest wyświetlany na interfejsie użytkownika.
+    \item System rejestracji i logowania: aplikacja mobilna pozwala użytkownikowi na zarejestrowanie się oraz zalogowanie do systemu, zaimplementowaniu zewnętrznego serwisu FirebaseAuth.
+    \item System zarządzania kontem: aplikacja mobilna pozwala użytkownikowi na zarządzanie swoim kontem, w tym zmianę hasła, wylogowanie oraz usunięcie konta. Dodatkowo użytkownik posiada możliwość zresetowania hasła w przypadku jego zapomnienia.
+    \item Możliwość zmiany języka interfejsu: aplikacja mobilna pozwala użytkownikowi na zmianę języka interfejsu, dostępne są dwa języki: polski oraz angielski.
+    \item Możliwość zmiany motywu interfejsu: aplikacja mobilna pozwala użytkownikowi na zmianę motywu interfejsu, dostępne są dwa motywy: jasny oraz ciemny.
+\end{itemize}
+
+\section{Testy aplikacji}
+Istotnym elementem tworzenia oprogramowania jest pokrycie kodu testemi, które pozwala zweryfikować poprawność działania aplikacji oraz zapewnić jej niezadowne działanie w różnych warunkach.
+Aplikacja mobilna została przetestowana przy pomocy testów jednostkowych.
+Kluczową role odegrało odpowiednie podejście to architektury systemu, które pozwoliło testować poszczególne komponenty niezależnie od siebie.
+
+\subsection{Wyniki testów}
+
+Wszystkie kluczowe komponenty aplikacji zostały pokryte testami jednostkowymi.
+Testy wykazały, że logika biznesowa zaimplementowana w BLoC działa poprawnie, a przepływ danych między warstwami w zastosowanej architekturze jest zgodny z oczekiwaniami.
+
+\section{Interfejs użytkownika}
+Podczas tworzenia oprogramowania starano się zapewnić odpowiednią strukturę interfejsu użytkownika, tak aby był on intuicyjny oraz łatwy w obsłudze.
+Kluczowym aspektem podczas prototypowania wyglądu interfejsu było zapewnienie odpowiedniej palety kolorów oraz zapewnienie odpowiedniego kontrastu między poszczególnymi elementami.
+Zapewnienie odowiedniej palety kolorów pozwala na zwiększenie czytelności interfejsu poprzez m.in. wyszczególnienie ważnych pod względem funkcjonalności elementów.
+
+Zadbano również o to aby interfejs był responsywny oraz dostosowany do różnych rozdzielczości ekranów.
+
+\section{Problemy napotkane podczas implementacji}
+Największym problemem napotkanym podczas implementacji aplikacji był sposób w jaki odbywa się klasyfikacja znaków poprzez model, konkretnie, nie jest on w stanie bez odowiedniego przygotowania danych rozpoznawać więcej niż jednego znaku na raz.
+W tym celu zdecydowano się na ograniczenie nagrywanego znaku do jednego poprzez ograniczenie czasu nagrywania do 2 sekund.
+
+Nie został rozwiązany problem dużej ilości klas, a co za tym idzie, dużą ilość możliwych znaków, przez co model nie jest w stanie rozpoznawać znaków w warunkach rzeczywistych podczas użytkownia aplikacji.

@@ -5,3 +5,6 @@
 \backcite {jm3}{{10}{2.1}{section.2.1}}
 \backcite {DBLP:journals/corr/abs-2010-11929}{{10}{2.1}{section.2.1}}
 \backcite {vaswani2023attentionneed}{{12}{2.1}{figure.caption.4}}
+\backcite {10.1145/3577190.3614143}{{16}{1}{BackrefHyperFootnoteCounter.1}}
+\backcite {dart_language_important_concepts}{{17}{3.2.1}{subsection.3.2.1}}
+\backcite {cleanArchitecture}{{18}{3.2.2}{subsection.3.2.2}}

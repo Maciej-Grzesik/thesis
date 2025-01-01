@@ -1,0 +1,54 @@
+\chapter{Podsumowanie}
+
+W ramach pracy zaimplementowano aplikacje mobilną pozwalającą na rozpoznawanie znaków języka migowego w czasie rzeczywistym.
+Aplikacja została zaprojektowana w sposób umożliwiający użytkownikowi dostosowanie języka aplikacji (aktualne wsparcie dla języka polskiego i angielskiego) oraz motywu (jasny, ciemny).
+Aplikacja została zbudowana i przetestowana pod kątem funkcjonalności na urządzeniu fizycznym opartym o system iOS 18.1.1 oraz na emulatorze systemu operacyjnego Android [wpisac wersje].
+Ze względu na specyfikacje pracy emulatora nie udało się sprawdzić poprawności przesyłu nagranego wideo na urzadzeniach opartych o system Android, ponieważ emulator nie wspiera możliwości symulowania obrazu z kamery.
+Dodatkowo w aplikacji mobilnej zaimplementowano system rejestracji oraz logowania przy użyciu zewnętrznego serwisu jakim jest Firebase. 
+Aktualnie ta funkcjonalność nie niesie za sobą znaczącego wpływu na użytkowanie aplikacji, natomiast w ramach perspektywy rozwoju może pozwolić na wprowadzenie nowych funkcjonalności.
+
+W ramach pracy również zaimplementowano serwer obsługujący klasyfikacje znaków języka migowego.
+Za pomocą wyuczonego modelu użytkownik jest w stanie z poziomu aplikacji wysłać zapytanie do serwera zawierające nagrany z kamery urządzenia mobilnego film przedstawiający osobę migającą, a następnie jako odpowiedź dostać proponowane słowo.
+Problemem tego rozwiązania jest relatywnie niska skuteczność zastosowanego modelu. 
+W praktyce klafyikacja przeprowadzana jest z dokładnością wynoszącą $60.8\%$ co często zwraca niepoprawnie sklasyfikowane słowa.
+Natomiast rozwój aplikacji jest obiecujący pod kątem wykorzystania większego zbioru danych do wytrenowania modelu. 
+Zastosowanie zbioru danych How2Sign pozwoliłoby na nauczenie modelu o znaczącej dokładności, jednakowoż wymagana do tego moc obliczeniowa jest ogromna.
+Dodatkowo należy zaadresować fakt, iż klasyfikacja odbywa się na podstawie amerykańskiego języka migowego który znacząco różni sie od m.in. polskiego języka migowego.
+W celu rozszerzenia funkcjonalności o inne języki należałoby przygotować odpowiednie zbiory danych zawierające znaczną ilość mignięć reprezentujących dane słowa (klasy).
+
+Niemniej nawet dla małego zbioru danych zawierających maksymalnie kilka filmów reprezentujących dane słowo skuteczność modelu opartego na architekturze transformerów osiągneła zadziwiający wynik.
+Biorąc pod uwagę specyfikacje uczenia takich modeli, czyli fakt, iż zazwyczaj wymagana jest większa ilość danych treningowych od sieci konwolucyjnych, to wykorzystanie większego zbioru danych powinno przynieść obiecujące rezultaty warte zbadania.
+
+% 3.2 Znaczenie projektu
+% Podkreśl, jak projekt może przyczynić się do rozwoju technologii wspierających osoby niesłyszące oraz poprawy dostępu do komunikacji za pomocą języka migowego.
+
+% Przykład:
+% „Projekt stanowi istotny krok w kierunku stworzenia narzędzi wspierających osoby niesłyszące w codziennej komunikacji, zwiększając dostępność i inkluzyjność społeczną.”
+
+% 3.3 Wnioski ogólne
+% Zakończ rozdział i całą pracę ogólnymi wnioskami dotyczącymi doświadczeń i wyników uzyskanych podczas realizacji projektu.
+
+% Przykład:
+% „Zrealizowany projekt pokazuje, jak nowoczesne technologie, takie jak modele transformatorowe, mogą być skutecznie zastosowane do rozwiązywania problemów społecznych, jakim jest komunikacja z osobami niesłyszącymi.”
+
+
+% Rozdział 3: Podsumowanie
+% W rozdziale „Podsumowanie” należy podsumować całą pracę, przedstawiając najważniejsze osiągnięcia oraz podkreślając, w jaki sposób aplikacja przyczynia się do rozwoju technologii rozpoznawania znaków języka migowego.
+
+% 3.1 Podsumowanie osiągnięć
+% Opisz najważniejsze rezultaty pracy: stworzenie aplikacji mobilnej, implementacja modelu transformatora do rozpoznawania znaków języka migowego, integracja aplikacji z tym modelem oraz testy wydajnościowe.
+
+% Przykład:
+% „Celem pracy było stworzenie aplikacji mobilnej do rozpoznawania znaków języka migowego. Użyty model transformatora zapewnia wysoką dokładność, a sama aplikacja działa płynnie na urządzeniach mobilnych. Zrealizowane testy wykazały jej użyteczność w realnych warunkach.”
+
+% 3.2 Znaczenie projektu
+% Podkreśl, jak projekt może przyczynić się do rozwoju technologii wspierających osoby niesłyszące oraz poprawy dostępu do komunikacji za pomocą języka migowego.
+
+% Przykład:
+% „Projekt stanowi istotny krok w kierunku stworzenia narzędzi wspierających osoby niesłyszące w codziennej komunikacji, zwiększając dostępność i inkluzyjność społeczną.”
+
+% 3.3 Wnioski ogólne
+% Zakończ rozdział i całą pracę ogólnymi wnioskami dotyczącymi doświadczeń i wyników uzyskanych podczas realizacji projektu.
+
+% Przykład:
+% „Zrealizowany projekt pokazuje, jak nowoczesne technologie, takie jak modele transformatorowe, mogą być skutecznie zastosowane do rozwiązywania problemów społecznych, jakim jest komunikacja z osobami niesłyszącymi.”
